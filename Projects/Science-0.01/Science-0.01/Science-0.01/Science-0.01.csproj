@@ -1,0 +1,301 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F81F8DEA-959C-4F35-81A4-7E8844A2D4B5}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Science_0._01</RootNamespace>
+    <AssemblyName>Science-0.01</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Icons8-Windows-8-Science-Physics.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <Win32Resource>
+    </Win32Resource>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Office.Interop.Word, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form_Admin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Admin.Designer.cs">
+      <DependentUpon>Form_Admin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_article.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_article.Designer.cs">
+      <DependentUpon>Form_article.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_conf.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_conf.Designer.cs">
+      <DependentUpon>Form_conf.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_conf_kursant.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_conf_kursant.Designer.cs">
+      <DependentUpon>Form_conf_kursant.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_inventions.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_inventions.Designer.cs">
+      <DependentUpon>Form_inventions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_ListConf.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_ListConf.Designer.cs">
+      <DependentUpon>Form_ListConf.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_login.Designer.cs">
+      <DependentUpon>Form_login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_mill_training.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_mill_training.Designer.cs">
+      <DependentUpon>Form_mill_training.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_reports.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_reports.Designer.cs">
+      <DependentUpon>Form_reports.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_research_work.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_research_work.Designer.cs">
+      <DependentUpon>Form_research_work.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_review.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_review.Designer.cs">
+      <DependentUpon>Form_review.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_scientific_leaders.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_scientific_leaders.Designer.cs">
+      <DependentUpon>Form_scientific_leaders.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_selection_table.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_selection_table.Designer.cs">
+      <DependentUpon>Form_selection_table.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_seminar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_seminar.Designer.cs">
+      <DependentUpon>Form_seminar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_sience_work.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_sience_work.Designer.cs">
+      <DependentUpon>Form_sience_work.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_table_PPS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_table_PPS.Designer.cs">
+      <DependentUpon>Form_table_PPS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_textbooks.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_textbooks.Designer.cs">
+      <DependentUpon>Form_textbooks.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form_Admin.resx">
+      <DependentUpon>Form_Admin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_article.resx">
+      <DependentUpon>Form_article.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_conf.resx">
+      <DependentUpon>Form_conf.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_conf_kursant.resx">
+      <DependentUpon>Form_conf_kursant.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_inventions.resx">
+      <DependentUpon>Form_inventions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_ListConf.resx">
+      <DependentUpon>Form_ListConf.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_login.resx">
+      <DependentUpon>Form_login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_mill_training.resx">
+      <DependentUpon>Form_mill_training.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_reports.resx">
+      <DependentUpon>Form_reports.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_research_work.resx">
+      <DependentUpon>Form_research_work.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_review.resx">
+      <DependentUpon>Form_review.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_scientific_leaders.resx">
+      <DependentUpon>Form_scientific_leaders.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_selection_table.resx">
+      <DependentUpon>Form_selection_table.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_seminar.resx">
+      <DependentUpon>Form_seminar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_sience_work.resx">
+      <DependentUpon>Form_sience_work.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_table_PPS.resx">
+      <DependentUpon>Form_table_PPS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_textbooks.resx">
+      <DependentUpon>Form_textbooks.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ok-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Teachers-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logout-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Login-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Close-2-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logout-icon %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\back-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delete-file-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Files-New-File-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Other-Save-Metro-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Text-Edit-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logout-icon %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\forward-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delete-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Actions-window-close-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minimize-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\restore-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Icons8-Windows-8-Science-Physics.ico" />
+    <None Include="Resources\calculator-icon.png" />
+    <None Include="Resources\Distributor-report-icon.png" />
+    <None Include="Resources\Windows-Table-icon.png" />
+    <None Include="Resources\Reports-icon.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,6 @@
+D:\Diplom\Projects\Science-0.01\Science-0.01\Test_Any_thing\bin\Debug\Test_Any_thing.exe.config
+D:\Diplom\Projects\Science-0.01\Science-0.01\Test_Any_thing\bin\Debug\Test_Any_thing.exe
+D:\Diplom\Projects\Science-0.01\Science-0.01\Test_Any_thing\bin\Debug\Test_Any_thing.pdb
+D:\Diplom\Projects\Science-0.01\Science-0.01\Test_Any_thing\obj\Debug\Test_Any_thing.csprojResolveAssemblyReference.cache
+D:\Diplom\Projects\Science-0.01\Science-0.01\Test_Any_thing\obj\Debug\Test_Any_thing.exe
+D:\Diplom\Projects\Science-0.01\Science-0.01\Test_Any_thing\obj\Debug\Test_Any_thing.pdb
