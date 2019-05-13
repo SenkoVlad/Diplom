@@ -31,6 +31,9 @@ namespace Science_0._01
         //Поля для поиска
         private string search_field = "";
 
+        //Для чтения данных из таблицы
+        OleDbDataReader reader = null;
+
         private OleDbConnection connection = new OleDbConnection();
 
         public Form_conf_kursant(Form_login form_login, string table_name)
@@ -70,11 +73,11 @@ namespace Science_0._01
 
                     if (flag_update)
                     {
-                        command.CommandText = "update " + table_name + " set title_conf_kursant='" + txt_conf.Text + "'," + "FIO='" + txt_FIO.Text + "'," + "status='" + comboBox.SelectedItem.ToString() + "' where id_conf_kursant=" + int.Parse(id_conf_kursant) + ";";
+                        command.CommandText = "update " + table_name + " set title_conf_kursant='" + comboBox_name_conf.SelectedItem.ToString() + "'," + "FIO='" + txt_FIO.Text + "'," + "status='" + comboBox.SelectedItem.ToString() + "' where id_conf_kursant=" + int.Parse(id_conf_kursant) + ";";
                     }
                     else
                     {
-                        command.CommandText = "insert into " + table_name + " (title_conf_kursant,FIO,status,id_person) values('" + txt_conf.Text + "','" +
+                        command.CommandText = "insert into " + table_name + " (title_conf_kursant,FIO,status,id_person) values('" + comboBox_name_conf.SelectedItem.ToString() + "','" +
                             txt_FIO.Text + "','" + comboBox.SelectedItem.ToString() + "'," + login_form.id_person + ");";
                     }
 
@@ -241,7 +244,7 @@ namespace Science_0._01
 
         private void clean_input()
         {
-            txt_conf.Text = "";
+            comboBox_name_conf.Text = "";
             txt_FIO.Text = "";
             comboBox.Text = "";
         }
@@ -278,6 +281,21 @@ namespace Science_0._01
                 connection.Open();
                 OleDbCommand command = new OleDbCommand();
                 command.Connection = connection;
+
+                command.CommandText = "select name_conference from conference_list;";
+                reader = command.ExecuteReader();
+
+                comboBox_name_conf.Items.Clear();
+
+                while (reader.Read())
+                {
+                    if (!comboBox_name_conf.Items.Contains(reader[0].ToString()))
+                        comboBox_name_conf.Items.Add(reader[0].ToString());
+
+                }
+                reader.Close();
+
+
                 command.CommandText = "select id_conf_kursant,title_conf_kursant,FIO,status from " + table_name + " where id_person=" + login_form.id_person + ";";
 
 
@@ -323,7 +341,7 @@ namespace Science_0._01
             {
                 DataGridViewRow row = cell.OwningRow;
                 id_conf_kursant = row.Cells[0].Value.ToString();
-                txt_conf.Text = row.Cells[1].Value.ToString();
+                comboBox_name_conf.SelectedItem = row.Cells[1].Value.ToString();
                 txt_FIO.Text = row.Cells[2].Value.ToString();
                 comboBox.SelectedItem = row.Cells[3].Value.ToString();
             }

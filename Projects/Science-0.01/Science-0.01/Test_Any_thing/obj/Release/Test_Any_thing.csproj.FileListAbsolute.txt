@@ -1,6 +1,0 @@
-D:\Diplom_\Diplom_08.05\Projects\Science-0.01\Science-0.01\Test_Any_thing\bin\Release\Test_Any_thing.exe.config
-D:\Diplom_\Diplom_08.05\Projects\Science-0.01\Science-0.01\Test_Any_thing\bin\Release\Test_Any_thing.exe
-D:\Diplom_\Diplom_08.05\Projects\Science-0.01\Science-0.01\Test_Any_thing\bin\Release\Test_Any_thing.pdb
-D:\Diplom_\Diplom_08.05\Projects\Science-0.01\Science-0.01\Test_Any_thing\obj\Release\Test_Any_thing.csprojResolveAssemblyReference.cache
-D:\Diplom_\Diplom_08.05\Projects\Science-0.01\Science-0.01\Test_Any_thing\obj\Release\Test_Any_thing.exe
-D:\Diplom_\Diplom_08.05\Projects\Science-0.01\Science-0.01\Test_Any_thing\obj\Release\Test_Any_thing.pdb

@@ -53,12 +53,12 @@
             this.label_conf = new System.Windows.Forms.Label();
             this.label_user_name = new System.Windows.Forms.Label();
             this.txt_FIO = new System.Windows.Forms.TextBox();
-            this.txt_conf = new System.Windows.Forms.TextBox();
             this.dataGridView = new System.Windows.Forms.DataGridView();
             this.panel = new System.Windows.Forms.Panel();
             this.btn_minimize = new System.Windows.Forms.Button();
             this.btn_restore = new System.Windows.Forms.Button();
             this.btn_exit_2 = new System.Windows.Forms.Button();
+            this.comboBox_name_conf = new System.Windows.Forms.ComboBox();
             this.panel3.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -299,7 +299,7 @@
             "Международный"});
             this.comboBox.Location = new System.Drawing.Point(148, 346);
             this.comboBox.Name = "comboBox";
-            this.comboBox.Size = new System.Drawing.Size(270, 28);
+            this.comboBox.Size = new System.Drawing.Size(269, 28);
             this.comboBox.TabIndex = 14;
             // 
             // label_neck
@@ -364,18 +364,6 @@
             this.txt_FIO.Size = new System.Drawing.Size(266, 48);
             this.txt_FIO.TabIndex = 3;
             // 
-            // txt_conf
-            // 
-            this.txt_conf.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
-            this.txt_conf.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txt_conf.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.txt_conf.ForeColor = System.Drawing.Color.PaleTurquoise;
-            this.txt_conf.Location = new System.Drawing.Point(151, 24);
-            this.txt_conf.Multiline = true;
-            this.txt_conf.Name = "txt_conf";
-            this.txt_conf.Size = new System.Drawing.Size(266, 48);
-            this.txt_conf.TabIndex = 0;
-            // 
             // dataGridView
             // 
             this.dataGridView.AllowUserToAddRows = false;
@@ -423,12 +411,12 @@
             // 
             this.panel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(44)))), ((int)(((byte)(51)))));
             this.panel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel.Controls.Add(this.comboBox_name_conf);
             this.panel.Controls.Add(this.comboBox);
             this.panel.Controls.Add(this.label_neck);
             this.panel.Controls.Add(this.label_FIO);
             this.panel.Controls.Add(this.label_conf);
             this.panel.Controls.Add(this.txt_FIO);
-            this.panel.Controls.Add(this.txt_conf);
             this.panel.Enabled = false;
             this.panel.Location = new System.Drawing.Point(0, 35);
             this.panel.Name = "panel";
@@ -467,6 +455,22 @@
             this.btn_exit_2.TabIndex = 70;
             this.btn_exit_2.UseVisualStyleBackColor = true;
             this.btn_exit_2.Click += new System.EventHandler(this.btn_exit_2_Click);
+            // 
+            // comboBox_name_conf
+            // 
+            this.comboBox_name_conf.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
+            this.comboBox_name_conf.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.comboBox_name_conf.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.comboBox_name_conf.ForeColor = System.Drawing.Color.PaleTurquoise;
+            this.comboBox_name_conf.FormattingEnabled = true;
+            this.comboBox_name_conf.Items.AddRange(new object[] {
+            "Вузовский",
+            "Республиканский",
+            "Международный"});
+            this.comboBox_name_conf.Location = new System.Drawing.Point(151, 28);
+            this.comboBox_name_conf.Name = "comboBox_name_conf";
+            this.comboBox_name_conf.Size = new System.Drawing.Size(266, 28);
+            this.comboBox_name_conf.TabIndex = 15;
             // 
             // Form_conf_kursant
             // 
@@ -531,9 +535,9 @@
         private System.Windows.Forms.TextBox txt_FIO;
         private System.Windows.Forms.Button btn_restore;
         private System.Windows.Forms.Button btn_exit_2;
-        private System.Windows.Forms.TextBox txt_conf;
         private System.Windows.Forms.DataGridView dataGridView;
         private System.Windows.Forms.Panel panel;
+        private System.Windows.Forms.ComboBox comboBox_name_conf;
 
     }
 }
